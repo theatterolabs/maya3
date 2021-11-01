@@ -578,8 +578,12 @@ $(function() {
 		).then();
 		
 		document.getElementById('otp').style.display = 'none';
+		document.getElementById('verify').style.display = 'none';
+      		document.getElementById('ok').style.display = 'none';
+		document.getElementById('signup').style.display = 'block';
+		document.getElementById('plschk').style.display = 'none';
 		mixpanel.track('Entered Leaderboard');	
-    updateLeaderboard()
+    		updateLeaderboard()
 		alert('Your Score Was Posted');
 	});
 });
